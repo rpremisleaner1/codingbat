@@ -1,7 +1,7 @@
-def monkey_trouble(a_smile, b_smile):
-    if (a_smile and b_smile) or (not a_smile and not b_smile):
-        return True
-    return False
+def front3(str):
+    if len(str) < 3:
+        return str * 3
+    return str[0:3] * 3
 
-print(monkey_trouble(True, True))
-print(monkey_trouble(True, False))
+print(front3('abc'))
+print(front3('Chocolate'))
